@@ -1,9 +1,7 @@
-const btnElement = document.querySelector('button');
-const spanElement = document.getElementById('updateContent');
 
-btnElement.onclick = function(){
+const switchBtn = document.querySelector(".switch");
+const body = document.body;
 
-    const yourName = prompt("Please Enter Your Name:");
-    spanElement.textContent = yourName;
-
-}
+switchBtn.addEventListener("click",()=>{
+    body.classList.toggle("on");
+});
